@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homer Uchiha Meme Token</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file link -->
+    <!-- Font Awesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#how-to-buy">How to Buy?</a></li>
+                </ul>
+            </div>
+            <!-- Social Icons in the middle of the navbar -->
+            <div class="social-icons">
+                <a href="https://t.me/your-telegram" target="_blank" class="social-icon">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://twitter.com/your-handle" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i> <!-- Corrected Twitter icon -->
+                </a>
+            </div>
+            <div class="nav-right">
+                <span class="contract-address-container">
+                    <span class="contract-address" id="contractAddress">Oxrehjzfigbialrgz5ger54gergze</span>
+                    <span class="copy-icon" id="copyButton" onclick="copyAddress()">&#x2398;</span> <!-- Copy icon -->
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section with video -->
+    <section class="main-content" id="home">
+        <div class="video-container">
+            <video class="video-background" autoplay loop muted>
+                <source src="mais_what.mp4" type="video/mp4"> <!-- Placeholder video -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="content-overlay">
+            <h2>About Homer Uchiha</h2>
+            <p>The Homer Uchiha meme combines the iconic **Homer Simpson** with the power of the **Uchiha clan** from Naruto, creating a hilarious and powerful fusion. This meme token brings together the wisdom of the Uchiha bloodline with the iconic stupidity of Homer Simpson, bringing joy and laughter to the cryptosphere. Welcome to the ultimate meme coin crossover!</p>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section class="how-to-buy-section" id="how-to-buy">
+        <div class="content-overlay">
+            <h2>How to Buy?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae urna nisi. Vivamus consequat lacus eu nisi vehicula, a eleifend nisi efficitur. Integer convallis orci sit amet ante dapibus tincidunt. Sed nec dui nec ligula laoreet tincidunt. Cras sed orci tristique, sodales libero et, elementum elit. Nulla facilisi. Ut pretium, sapien in cursus pharetra, libero lectus viverra felis, ac egestas nulla ligula id sapien. Vivamus facilisis odio ac sapien pharetra, eu dignissim risus mollis. Proin convallis enim at elit sodales, sed euismod eros iaculis. Fusce tincidunt erat neque, ac posuere risus varius ac.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Homer Uchiha Meme Token - All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to copy the contract address to clipboard
+        function copyAddress() {
+            const contractAddress = document.getElementById("contractAddress").innerText;
+
+            // Use Clipboard API for modern browsers
+            navigator.clipboard.writeText(contractAddress).then(function() {
+                alert("Contract address copied!");
+            }).catch(function(err) {
+                console.error("Unable to copy: ", err);
+                alert("Failed to copy address.");
+            });
+        }
+    </script>
+</body>
+</html>
